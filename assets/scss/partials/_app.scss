@@ -1,0 +1,64 @@
+// ################################################
+// APP
+// ################################################
+
+// ------------------------------------------------
+// MISC
+// ------------------------------------------------
+.clear {
+  clear: both;
+}
+.group{
+    @include group;
+}
+.img-fluid {
+    @include img-fluid;
+}
+// ------------------------------------------------
+// GLOBAL
+// ------------------------------------------------
+
+html {
+    font-size: 120%;
+    @media (max-width: 576px) {
+      font-size: 100%;
+    }
+}
+body {
+    background: #fff;
+    font: calculate-rem($body-font-size)/1em $body-font-family;
+}
+a {
+    color: $noir;
+    @include hover() {
+      text-decoration: none;
+    }
+}
+img {
+  @include img-fluid;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.block-contenu {
+  padding: 0 30px;
+  margin: 20px 0;
+}
+h2 {
+    font-family: "Gloss And Bloom", sans-serif;
+    padding: 15px 30px 5px;
+}
+h3 {
+  @include fontsize(18);
+  margin-bottom: 5px;
+}
+p {
+  @include font-size(18);
+  line-height: 1.4em;
+}
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}

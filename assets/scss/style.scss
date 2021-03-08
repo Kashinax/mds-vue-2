@@ -1,0 +1,36 @@
+/*
+ Theme Name:   Stop maladie chronique
+ Theme URI:    
+ Description:  Thème pour un blog sur les maladies chroniques
+ Author:       Ruben Lecomte
+ Author URI:
+ Version:      2
+ Tags:
+*/
+
+// ---------------------------------------------------------
+// MASTER (HUB)
+// ---------------------------------------------------------
+
+@import "partials/variables";
+@import "partials/functions";
+@import "partials/mixins";
+
+@import "../../src/components/fontawesome/scss/fontawesome.scss";
+@import "../../src/components/fontawesome/scss/brands.scss";
+@import "../../src/components/fontawesome/scss/regular.scss";
+@import "../../src/components/fontawesome/scss/solid.scss";
+
+@import "../../src/components/bootstrap/scss/bootstrap-grid";
+@import "../../src/components/bootstrap/scss/bootstrap-reboot";
+
+
+@import "partials/reset";
+@import "partials/fonts";
+
+@import "partials/app";
+
+@import "partials/header";
+@import "partials/footer";
+
+@import "partials/home";

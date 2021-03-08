@@ -1,0 +1,40 @@
+{
+  "name": "stage_bcv",
+  "version": "1.0.0",
+  "description": "Bracelet Chemin de Vie est un plugin WordPress.\r ## Installation\r Pour installer le plugin, il faut glisser le dossier \"BCV\" dans le répertoire \"plugins\" de WordPress.\r Afin d'installer les pierres par défaut, il faut utiliser l'option Restaurer dans la \"Zone de danger\" de BCVOptions.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lordam11/stage_bcv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lordam11/stage_bcv/issues"
+  },
+  "homepage": "https://github.com/Lordam11/stage_bcv#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "jquery": "^3.6.0"
+  }
+}
