@@ -116,7 +116,7 @@ const watchFiles = () =>
 // PROCESS :
 const watcher = gulp.parallel(watchFiles, browserSyncWatch)
 const build = gulp.series(clean, gulp.parallel(styles, scripts, images));
-const tout = gulp.series(build, watcher)
+const tout = gulp.series(build, watcher);
 // EXPORT TASK
 // exports.clean = clean        // exec with : npx gulp clean
 // exports.scripts = scripts    // exec with : npx gulp scripts

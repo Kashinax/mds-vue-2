@@ -1,3 +1,14 @@
+body {
+    background-color: lighten(black, 95);
+}
+.block-cv {
+    padding: 15px 0;
+    
+    .container {
+        box-shadow: 0px 0px 30px rgba($noir, .4);
+    }
+}
+
 .informations-personnelles {
     display: flex;
     justify-content: space-between;
@@ -141,6 +152,7 @@
 }
 .informations-generales {
     padding: 60px $gutter;
+    background-color: white;
     h2.h2-black {
         color: white;
         background-color: $noir;
