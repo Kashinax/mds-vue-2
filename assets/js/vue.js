@@ -6,7 +6,16 @@ const apiURL =
 const AppCv = {
     data() {
         return {
-            apiWordpress: [],
+            apiWordpress: {
+                content: {
+                    rendered: '',
+                },
+                acf: {
+                    experiences: [],
+                    competences: [],
+                    diplomes: [],
+                },
+            },
         }
     },
     created: function () {

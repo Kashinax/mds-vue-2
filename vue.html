@@ -112,20 +112,19 @@
                             <h2 class="h2-black">
                                 Expériences
                             </h2>
+                            <!--
+                                API REST WORDPRESS : ACF Expériences
+                            -->
                             <div class="block-contenu experience" v-for="exp in apiWordpress.acf.experiences">
                                 <h3>
                                     {{ exp.titre }}
                                 </h3>
                                 <p class="lieu">
-                                    {{ exp.entreprise }}
+                                    {{ exp.entreprise }} | {{ exp.date_debut }} - {{ exp.date_fin }}
                                 </p>
                                 <div v-html="exp.contenu">
                                 </div>
                             </div>
-                            
-                            <!--
-                                API REST WORDPRESS : ACF Expériences
-                            -->
                         </section>
                         <section class="block-diplome">
                             <h2 class="h2-yellow">
@@ -133,10 +132,17 @@
                             </h2>
                             <div class="block-contenu">
                                 <div class="row">
-
                                     <!--
                                         API REST WORDPRESS : ACF Diplômes
                                     -->
+                                    <div class="col-md-6" v-for="dip in apiWordpress.acf.diplomes">
+                                        <h3>
+                                            {{ dip.titre }}
+                                        </h3>
+                                        <p class="lieu">
+                                            {{ dip.entreprise }} | {{ dip.date_debut }} - {{ dip.date_fin }}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
