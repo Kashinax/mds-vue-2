@@ -112,16 +112,15 @@
                             <h2 class="h2-black">
                                 Expériences
                             </h2>
-                            <div v-for="exp in apiWordpress.api.experiences">
+                            <div class="block-contenu experience" v-for="exp in apiWordpress.acf.experiences">
                                 <h3>
                                     {{ exp.titre }}
                                 </h3>
                                 <p class="lieu">
                                     {{ exp.entreprise }}
                                 </p>
-                                <ul>
-
-                                </ul>
+                                <div v-html="exp.contenu">
+                                </div>
                             </div>
                             
                             <!--
