@@ -101,7 +101,7 @@
                         </div>
                     </section>
                     <div class="col-lg-8 informations-generales">
-                        <section class="block-profil">
+                        <section class="block-profil" v-if="apiWordpress.content.rendered">
                             <h2 class="h2-yellow">
                                 Profil
                             </h2>
@@ -111,7 +111,7 @@
                                 -->
                             </div>
                         </section>
-                        <section class="block-experiences">
+                        <section class="block-experiences" v-if="apiWordpress.acf.experiences[0]">
                             <h2 class="h2-black">
                                 Expériences
                             </h2>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="block-diplome">
+                        <section class="block-diplome" v-if="apiWordpress.acf.diplomes[0]">
                             <h2 class="h2-yellow">
                                 Diplôme
                             </h2>
